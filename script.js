@@ -13,10 +13,11 @@ let result = [];
 		else{
 			result.push(currentChunk);
 		currentSum = arr[i];
-			currentChunk = [arr[i]];
+			currentChunk = arr[i];
 		}
 	}
 	result.push(currentChunk);
 	return result;
+};
 const n = prompt("Enter n: ");
 	alert(JSON.stringify(divide(arr, n)));
